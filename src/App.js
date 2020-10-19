@@ -1,24 +1,14 @@
 import React from 'react';
 import './App.css';
+
 //importar un componente
-import Img from './components/img'
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
+        <NavBar></NavBar>
       <header className="App-header">
-        <Img />
-        <p>
-          Edit <code>src/App.js</code> Giselle MAchado
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
