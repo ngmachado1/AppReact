@@ -1,7 +1,7 @@
 import React from "react";
-import logo from '../components/assets/images/Logo.svg';
+import logo from '../../components/assets/images/Logo.svg';
 import CartWidget from './CartWidget';
-
+import "./NavBar.css"
 
 function NavBar() {
 
@@ -9,8 +9,8 @@ function NavBar() {
     <>
       <nav>
         <picture>
-          <source media="(min-width: 759px)" srcset={logo}/>
-          <img class="header-logo" src={logo} alt="Maria Machado Luthier"/>
+          <source media="(min-width: 759px)" srcSet={logo}/>
+          <img className="header-logo" src={logo} alt="Maria Machado Luthier"/>
         </picture>
         <div className="menu">
           <div className="linea1"></div>

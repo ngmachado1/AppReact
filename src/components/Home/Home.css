@@ -1,0 +1,92 @@
+/* Section shopping */
+.shopping{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+  
+  /* HomeArticle */
+  .product{
+    margin: 30px;
+    width: 300px;
+    border-radius: 25px;
+    border: solid white 1px;
+    padding: 25px 30px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.2);
+  box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.2);
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .verDetalle{
+    padding-top: 15px;
+  }
+  .derecha{
+    position: absolute;
+    right: 0px;
+    top: 12px;
+  }
+  .img-article{
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0px;
+    width: 100%;
+  }
+  .grey{
+    color: #ADB5BD;
+  }
+  .Numberwidget{
+    width: 85px;
+    justify-content: space-between;
+    padding-top: 14px;
+    font-size: 26px;
+    font-family: 'ArminVariable';
+  }
+  .number-prodcuts{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .icon-circle{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.3);
+    box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.3);
+    border: solid white 1px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .symbols{
+    align-self: center;
+  }
+  .d-min{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #00BCA8;
+  }
+  .agregar{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.4);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.4);
+    box-shadow: 0px 0px 10px 0px rgba(134,142,150,0.4);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background: -webkit-linear-gradient(top, #28d1aa 0%, #00a8a5 100%);
+    font-weight: 700;
+  }
+  .agregar:hover{
+    background: -webkit-linear-gradient(top, #00a8a5 0%, #28d1aa 100%);
+  }
+  .mr-5{
+    margin-right: 10px;
+  }
