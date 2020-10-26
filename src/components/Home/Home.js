@@ -36,27 +36,22 @@ function ItemListContainer({ title }) {
     );
 }
 function ItemCount({stock, initial}){
-    const cuenta =  {
-        key : "value"
-    }
+
 
     const [Count, setCount] = useState(Number(initial));
     function onAdd (){
         if (Number(stock) > 0 && Count < Number(stock)){
             setCount(Count + 1);
-            cuenta.key = Count+1;
         }
     }
     function restCounter(){
         if (Count > 0){
-        setCount(Count - 1)
-
+        setCount(Count - 1);
         }
     }
 
     function addToCart(){
-        console.log(Count)
-        localStorage.setItem("Cuenta", Count);
+        console.log(Count);
     }
 
     return (
