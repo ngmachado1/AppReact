@@ -10,7 +10,7 @@
   /* HomeArticle */
   .product{
     margin: 30px;
-    width: 300px;
+    width: 320px;
     border-radius: 25px;
     border: solid white 1px;
     padding: 25px 30px;
@@ -48,8 +48,9 @@
     font-size: 26px;
     font-family: 'ArminVariable';
   }
-  .number-prodcuts{
-    font-size: 20px;
+  .number-products{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
     font-weight: 500;
   }
   .icon-circle{

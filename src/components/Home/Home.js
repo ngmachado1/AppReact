@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import imagen from '../assets/images/Alimetos/eukanuba.png';
 import "./Home.css";
 
@@ -29,25 +29,34 @@ function ItemListContainer({ title }) {
                 Medium. <br />
                 Peso entre 11 y 25 kg.
                 </p>
-                <ItemCount/>
+                <ItemCount stock="10" initial="2"/>
             </div>
             </article>
         </>
     );
 }
-function ItemCount(){
-    const [Count, setCount] = useState(0);
-    const [CuentaFinal, setCuentaFinal] = useState();
-    function addCounter (){
-        setCount(Count + 1);
+function ItemCount({stock, initial}){
+    const cuenta =  {
+        key : "value"
+    }
+
+    const [Count, setCount] = useState(Number(initial));
+    function onAdd (){
+        if (Number(stock) > 0 && Count < Number(stock)){
+            setCount(Count + 1);
+            cuenta.key = Count+1;
+        }
     }
     function restCounter(){
+        if (Count > 0){
         setCount(Count - 1)
+
+        }
     }
 
     function addToCart(){
-        setCuentaFinal(Count)
-        console.log(CuentaFinal)
+        console.log(Count)
+        localStorage.setItem("Cuenta", Count);
     }
 
     return (
@@ -57,8 +66,8 @@ function ItemCount(){
                 <div className="icon-circle" onClick={restCounter}>
                     <span className="symbols"> - </span>
                 </div>
-                <span className="number-prodcuts"> {Count} </span>
-                <div className="icon-circle" onClick={addCounter}>
+                <span className="number-products"> {Count} </span>
+                <div className="icon-circle" onClick={onAdd}>
                     <span className="symbols"> + </span>
                 </div>
             </div>
@@ -66,10 +75,10 @@ function ItemCount(){
         </div>
 
         </>
+
     )
 }
 
 
 
 export default ItemListContainer;
-
