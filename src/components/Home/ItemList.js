@@ -2,14 +2,16 @@ import React from 'react';
 
 import Item from './Item';
 
-function ItemList({products, stock, initial}){
-    return( 
-        <article className="product">
+function ItemList({products, initial}){
+    return( <> 
             {products.map(product => {
-                return  <Item product={product} stock={stock} initial={initial} />
+                return  <article className="product">
+
+                <Item product={product} stock={product.stock} initial={initial} />
+                </article>
+
     })}
-        </article>
-    )
+    </>)
 }
 
 export default ItemList

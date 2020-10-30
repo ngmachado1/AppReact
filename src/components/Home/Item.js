@@ -16,11 +16,11 @@ function Item({ product, stock, initial }) {
                 </div>
             </div>
             <div className="container-Img">
-                <img className="img-article" src={product.imagen} alt="" />
+                <img className="img-article" src={product.image} alt="" />
             </div>
             <div className="Description">
                 <h2>${product.price}</h2>
-                <h3>{product.title}</h3>
+                <h3 className="Product-title">{product.title}</h3>
                 <p className="d-min">
                     {product.description}
                 </p>

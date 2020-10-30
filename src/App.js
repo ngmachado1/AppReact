@@ -12,8 +12,8 @@ function App() {
       <header>
         <NavBar></NavBar>
       </header>
-
-        <ItemListContainer title="Royal Canin"/>
+      
+        <ItemListContainer title="Alimentos"/>
 
     </div>
   );

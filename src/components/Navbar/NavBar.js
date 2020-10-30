@@ -9,8 +9,8 @@ function NavBar() {
     <>
       <nav>
         <picture>
-          <source media="(min-width: 759px)" srcSet={logo}/>
-          <img className="header-logo" src={logo} alt="Maria Machado Luthier"/>
+          <source media="(min-width: 759px)" srcSet="images/Logo.svg"/>
+          <img className="header-logo" src="images/Logo.svg" alt="Maria Machado Luthier"/>
         </picture>
         <div className="menu">
           <div className="linea1"></div>
